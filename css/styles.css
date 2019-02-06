@@ -123,7 +123,7 @@ header {
     left: 0;
     right: 0;
     margin: auto;
-    color: purple;
+    color: black;
     padding: .5rem; }
   header .slogan h2 {
     width: 80%;
@@ -160,7 +160,8 @@ header {
 nav {
   position: fixed;
   width: 100%;
-  z-index: 2; }
+  z-index: 2;
+  background-color: #8cbf40; }
   nav .menuIcon {
     cursor: pointer;
     position: relative;
@@ -168,7 +169,7 @@ nav {
   nav .menuIcon div {
     width: 1.34rem;
     height: .2rem;
-    background-color: purple;
+    background-color: #314414;
     margin: .2rem;
     transition: .2s; }
   nav .menuIcon div:nth-child(1) {
@@ -178,13 +179,16 @@ nav {
   nav .menuList ul li {
     list-style: none;
     padding: .5rem 0;
-    color: coral; }
+    color: white;
+    background-color: #8cbf40; }
   nav .menuList {
     position: relative;
     opacity: 0;
     overflow: hidden;
+    display: none;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
   nav .show {
+    display: block;
     opacity: 1; }
   nav .closeIcon1 {
     transform: rotate(45deg) translate(-2px, -1px);
@@ -198,7 +202,7 @@ nav {
   nav .effect {
     width: 10px;
     height: 10px;
-    background-color: purple;
+    background-color: rgba(140, 191, 64, 0.3);
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -213,16 +217,33 @@ nav {
 
 /*------------------Main ----------------*/
 main {
-  width: 90%;
+  width: 100%;
   margin: 1rem auto; }
 
-.container figure {
+section {
+  margin: 0 auto;
+  padding: 1rem 0; }
+
+section:first-child {
+  background-color: #bad98c; }
+
+section:nth-child(2) {
+  background-color: #a3cc66; }
+
+.container p {
   width: 90%;
+  margin: .5rem auto; }
+
+.container figure {
+  width: 100%;
   margin: .5rem auto; }
   .container figure img {
     width: 100%; }
 
 /*-------------MATERIALS---------------*/
+.teachWhat .mainType {
+  width: 80%; }
+
 .material ul li {
   list-style: none; }
 
