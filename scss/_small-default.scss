@@ -7,10 +7,17 @@ html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%};
 body{
     font-family: $defaultFont;
     font-weight: $normalWeight;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1rem;
     text-align:center;
 }
-
+h1{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+h2{
+    font-size:1.1rem;
+}
 /*---------HEADER-----------*/
 header{
     position: relative;
@@ -23,7 +30,7 @@ header{
         left:0;
         right:0;
         margin:auto;
-        font-size: 1rem;
+        color:purple;
         padding: .5rem;
         
     }
@@ -38,10 +45,11 @@ header{
     }
     .slogan{
         color:red;
-        margin: 1rem 2%;
+        margin: 1rem auto;
         position: relative;
         font-style: italic;
         font-size: .8rem;
+        width: 80%;
     }
     .slogan::before{
         font-family: "Font Awesome 5 Free";
@@ -138,6 +146,29 @@ nav {
         opacity: 1;
     }
 }
+/*------------------Main ----------------*/
+main{
+    width: 90%;
+    margin: 1rem auto;
+}
+.container figure{
+    width: 90%;
+    margin: .5rem auto;
+    img{
+        width:100%;
+    }
+}
+
+/*-------------MATERIALS---------------*/
+.material ul li{
+    list-style: none;
+}
+.material ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
 
 /*--------------Footer-----------------*/
 footer{
