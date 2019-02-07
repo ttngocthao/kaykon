@@ -1,3 +1,40 @@
-header h1{
-    color:blue;
+/*================ HEADER ================*/
+header {
+    position: relative;
+}
+/*=============== NAV =================*/
+.mobile .menuIcon,
+.mobile .menuList{
+    display: none;
+}
+.bigScreen{
+    display: block;
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    ul li{
+        padding: .5rem;
+        cursor: pointer;
+    }
+    // ul li:last-child{
+    //     flex-grow: 2;
+    // }
+    ul li:hover{
+        background-color: darken($color: $primaryColor, $amount: 10%);
+    }
+}
+
+.sideBar{
+    margin-right: 2%;
+    right: 0;
+}
+/*================ FOOTER ================*/
+footer{
+    figure:nth-child(1){
+        display: block;
+    }
+    figure:nth-child(2){
+        display: none;
+    }
 }

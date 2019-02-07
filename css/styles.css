@@ -101,7 +101,7 @@ html {
 body {
   font-family: "Muli", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: .9rem;
   line-height: 1rem;
   text-align: center; }
 
@@ -113,162 +113,136 @@ h2 {
   font-size: 1.1rem; }
 
 /*---------HEADER-----------*/
-header {
-  position: relative;
-  top: 3rem; }
-  header figure img {
-    width: 100%; }
-  header h1 {
-    text-transform: uppercase;
-    left: 0;
-    right: 0;
-    margin: auto;
-    color: black;
-    padding: .5rem; }
-  header .slogan h2 {
-    width: 80%;
-    margin: 1rem auto; }
-  header .slogan h4 {
-    text-align: right;
-    padding: 0 1rem;
-    margin: 0 1rem; }
-  header .slogan {
-    color: red;
-    margin: 1rem auto;
-    position: relative;
-    font-style: italic;
-    font-size: .8rem;
-    width: 80%; }
-  header .slogan::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f10d";
-    font-size: .8rem;
-    line-height: 0.1em;
-    position: absolute;
-    left: 2%; }
-  header .slogan::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f10e";
-    font-size: .8rem;
-    line-height: 0.1em;
-    position: absolute;
-    right: 2%; }
+header .banner {
+  margin-top: 50px; }
+header .banner img {
+  width: 100%; }
 
 /*-----------NAV-----------------*/
-nav {
+.navbar {
+  background-color: #b3d334;
+  color: white;
   position: fixed;
-  width: 100%;
+  top: 0;
+  left: 0;
   z-index: 2;
-  background-color: #8cbf40; }
-  nav .menuIcon {
-    cursor: pointer;
-    position: relative;
-    text-align: right; }
-  nav .menuIcon div {
-    width: 1.34rem;
-    height: .2rem;
-    background-color: #314414;
-    margin: .2rem;
-    transition: .2s; }
-  nav .menuIcon div:nth-child(1) {
-    transform-origin: 0% 0%; }
-  nav .menuIcon div:nth-child(3) {
-    transform-origin: 0% 100%; }
-  nav .menuList ul li {
+  width: 100%;
+  height: 50px; }
+
+.menuIcon {
+  text-align: right; }
+  .menuIcon i {
+    padding: .5rem;
+    font-size: 1.5rem; }
+
+.bigScreen {
+  display: none; }
+
+.mobile .menuList {
+  display: none;
+  background-color: #b3d334; }
+
+.menuList li {
+  padding: .5rem;
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.menuList li:hover {
+  background-color: #93ae26; }
+
+.show {
+  display: block !important; }
+
+/*--------------Side Bar------------------*/
+.sideBar {
+  z-index: 3;
+  position: absolute;
+  top: .5rem;
+  margin-left: 5%;
+  color: white; }
+  .sideBar ul {
+    display: flex;
+    height: 30px;
+    align-items: center; }
+  .sideBar ul li {
+    width: 30px;
+    padding: .25rem 0;
     list-style: none;
-    padding: .5rem 0;
-    color: white;
-    background-color: #8cbf40; }
-  nav .menuList {
-    position: relative;
-    opacity: 0;
-    overflow: hidden;
-    display: none;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
-  nav .show {
-    display: block;
-    opacity: 1; }
-  nav .closeIcon1 {
-    transform: rotate(45deg) translate(-2px, -1px);
-    background-color: coral !important; }
-  nav .closeIcon2 {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2); }
-  nav .closeIcon3 {
-    transform: rotate(-45deg) translate(0, -1px);
-    background-color: coral !important; }
-  nav .effect {
-    width: 10px;
-    height: 10px;
-    background-color: rgba(140, 191, 64, 0.3);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale3d(1, 1, 1);
-    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1) !important;
-    opacity: 0;
-    z-index: -1; }
-  nav .effect_active {
-    transform: scale3d(70, 70, 70);
-    opacity: 1; }
+    cursor: pointer; }
+  .sideBar ul li:nth-child(1) {
+    background-color: #64c0e9; }
+  .sideBar ul li:nth-child(2) {
+    background-color: #f8a01a; }
+  .sideBar #logo {
+    padding: 0; }
+  .sideBar #logo img {
+    width: 100%; }
 
 /*------------------Main ----------------*/
 main {
   width: 100%;
   margin: 1rem auto; }
 
-section {
-  margin: 0 auto;
-  padding: 1rem 0; }
-
-section:first-child {
-  background-color: #bad98c; }
-
-section:nth-child(2) {
-  background-color: #a3cc66; }
-
-.container p {
-  width: 90%;
-  margin: .5rem auto; }
-
-.container figure {
-  width: 100%;
-  margin: .5rem auto; }
-  .container figure img {
-    width: 100%; }
-
 /*-------------MATERIALS---------------*/
-.teachWhat .mainType {
-  width: 80%; }
-
-.material ul li {
-  list-style: none; }
-
-.material ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
-
 /*--------------Footer-----------------*/
 footer {
-  margin-top: 10rem;
-  padding: .3rem;
-  position: relative;
-  clear: both;
-  bottom: 0; }
+  text-align: left; }
+  footer figure:nth-child(1) {
+    display: none; }
+  footer figure img {
+    width: 100%; }
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #b3d334; }
   footer ul li {
-    display: inline-block; }
+    list-style: none;
+    font-size: .3rem;
+    color: #e2e0e0; }
   footer ul li:nth-child(1) {
-    position: absolute;
-    left: 2%; }
+    padding-left: 2%; }
   footer ul li:nth-child(2) {
-    position: absolute;
-    right: 2%; }
+    text-align: right;
+    padding-right: 2%; }
 
 @media only screen and (min-width: 35rem) {
-  header h1 {
-    color: blue; } }
+  /*================ HEADER ================*/
+  header {
+    position: relative; }
+
+  /*=============== NAV =================*/
+  .mobile .menuIcon,
+  .mobile .menuList {
+    display: none; }
+
+  .bigScreen {
+    display: block; }
+    .bigScreen ul {
+      display: flex;
+      justify-content: space-around; }
+    .bigScreen ul li {
+      padding: .5rem;
+      cursor: pointer; }
+    .bigScreen ul li:hover {
+      background-color: #93ae26; }
+
+  .sideBar {
+    margin-right: 2%;
+    right: 0; }
+
+  /*================ FOOTER ================*/
+  footer figure:nth-child(1) {
+    display: block; }
+  footer figure:nth-child(2) {
+    display: none; } }
 /*end media query*/
+@media only screen and (min-width: 60rem) {
+  .sideBar {
+    top: -49.7px;
+    right: 0;
+    margin-right: 0; }
+    .sideBar ul {
+      flex-direction: column; }
+    .sideBar ul li {
+      width: 110px;
+      padding: .75rem 0; } }
 /*end media query*/

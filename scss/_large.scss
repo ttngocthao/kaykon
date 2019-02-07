@@ -1,0 +1,13 @@
+.sideBar{
+    top:-49.7px;
+    right: 0;
+    margin-right: 0;
+    ul {
+        flex-direction: column;
+       
+    }
+    ul li{
+        width: 110px;
+        padding: .75rem 0;
+    }
+}   
