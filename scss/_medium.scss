@@ -14,8 +14,9 @@ header {
         justify-content: space-around;
     }
     ul li{
-        padding: .5rem;
+        padding:.7rem .5rem;
         cursor: pointer;
+        align-items: center;
     }
     // ul li:last-child{
     //     flex-grow: 2;

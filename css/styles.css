@@ -162,7 +162,8 @@ header .banner img {
   .sideBar ul {
     display: flex;
     height: 30px;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
   .sideBar ul li {
     width: 30px;
     padding: .25rem 0;
@@ -220,8 +221,9 @@ footer {
       display: flex;
       justify-content: space-around; }
     .bigScreen ul li {
-      padding: .5rem;
-      cursor: pointer; }
+      padding: .7rem .5rem;
+      cursor: pointer;
+      align-items: center; }
     .bigScreen ul li:hover {
       background-color: #93ae26; }
 
@@ -241,7 +243,8 @@ footer {
     right: 0;
     margin-right: 0; }
     .sideBar ul {
-      flex-direction: column; }
+      flex-direction: column;
+      overflow: visible; }
     .sideBar ul li {
       width: 110px;
       padding: .75rem 0; } }
