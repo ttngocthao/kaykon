@@ -10,5 +10,5 @@ function slideShow(){
     if(slideIndex > slides.length){slideIndex=1}
     // slides[slideIndex - 1].style.display= 'block';
     slides[slideIndex - 1].style.opacity= 1;
-    // setTimeout(slideShow,9000);
+    setTimeout(slideShow,5000);
 }

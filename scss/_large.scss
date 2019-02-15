@@ -1,13 +1,27 @@
-.sideBar{
-    top:-49.7px;
-    right: 0;
-    margin-right: 0;
-    ul {
-        flex-direction: column;
-        overflow: visible;
+/*================ HEADER ================*/
+header {
+    position: relative;
+}
+/*=============== NAV =================*/
+.mobile .menuIcon,
+.mobile .menuList{
+    display: none;
+}
+.bigScreen{
+    display: block;
+    ul{
+        display: flex;
+        justify-content: space-around;
     }
     ul li{
-        width: 110px;
-        padding: .75rem 0;
+        padding:.7rem .5rem;
+        cursor: pointer;
+        align-items: center;
     }
-}   
+    // ul li:last-child{
+    //     flex-grow: 2;
+    // }
+    ul li:hover{
+        background-color: darken($color: $primaryColor, $amount: 10%);
+    }
+}
