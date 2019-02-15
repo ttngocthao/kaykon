@@ -121,7 +121,7 @@ header .banner img {
 /*-----------NAV-----------------*/
 .navbar {
   background-color: #b3d334;
-  color: white;
+  color: #404d0b;
   position: fixed;
   top: 0;
   left: 0;
@@ -178,32 +178,53 @@ header .banner img {
   .sideBar #logo img {
     width: 100%; }
 
+/*-----------------SLIDER---------------*/
+div.slider {
+  margin-top: 2.5rem;
+  height: 25vh;
+  background-color: silver; }
+
+.slider figure {
+  width: 100%;
+  position: relative;
+  margin: 1rem 0;
+  left: 0; }
+
+.slider figure img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  transition: 9s ease-in-out; }
+
 /*------------------Main ----------------*/
 main {
   width: 100%;
-  margin: 1rem auto; }
+  margin: 1rem 0;
+  height: 200px; }
 
 /*-------------MATERIALS---------------*/
 /*--------------Footer-----------------*/
 footer {
-  text-align: left; }
+  text-align: left;
+  background-color: #b3d334; }
   footer figure:nth-child(1) {
-    display: none; }
+    display: none;
+    /*this pic for bigger screen*/ }
   footer figure img {
     width: 100%; }
   footer ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #b3d334; }
+    margin: .5rem 2%; }
   footer ul li {
     list-style: none;
-    font-size: .3rem;
-    color: #e2e0e0; }
-  footer ul li:nth-child(1) {
-    padding-left: 2%; }
-  footer ul li:nth-child(2) {
-    text-align: right;
-    padding-right: 2%; }
+    font-size: .7rem;
+    color: #404d0b; }
+  footer ul li i {
+    margin: 2%;
+    font-size: 1rem; }
+  footer p {
+    font-size: .25rem; }
 
 @media only screen and (min-width: 35rem) {
   /*================ HEADER ================*/
