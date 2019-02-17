@@ -52,6 +52,10 @@ header{
     display: none;
     background-color: $primaryColor;
 }
+.menuList a{
+    text-decoration: none;
+    color:#404d0b;
+}
 .menuList li{
     padding: .5rem;
     transition:.3s  cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -61,6 +65,9 @@ header{
 }
 .show{
     display:block !important;
+}
+.actived{
+    color:red!important;
 }
 /*--------------Side Bar------------------*/
 .location{
@@ -116,10 +123,20 @@ div.slider{
 /*------------------Main ----------------*/
 main{
     width: 100%;
-    margin: 1rem 0;
-   height: 200px;
+    margin: 7rem 0 1rem 0;
+   font-family: 'Dancing Script', cursive;
+   line-height: 1.2rem;
 }
-
+.gioiThieu{
+    padding: .5rem;
+    .follows{
+        margin:1rem 0 .5rem 0;
+    }
+    .follows figure img{
+        margin: .5rem;
+        width:15%;
+    }
+}
 
 
 /*-------------MATERIALS---------------*/
@@ -131,6 +148,7 @@ main{
     100%{color:#768633;}
 }
 footer {
+    
     text-align: left;
     background-color: $primaryColor;
     figure:nth-child(1){
