@@ -125,10 +125,17 @@ main{
     width: 100%;
     margin: 7rem 0 1rem 0;
    font-family: 'Dancing Script', cursive;
-   line-height: 1.2rem;
+   font-size:1.1rem;
+   line-height: 1.5rem;
 }
 .gioiThieu{
-    padding: .5rem;
+   
+    .content{
+       padding: .5rem 1rem;
+    }
+    .content div{
+        padding: .5rem 0;
+    }
     .follows{
         margin:1rem 0 .5rem 0;
     }
