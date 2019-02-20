@@ -88,7 +88,8 @@ header{
 /*-----------------SLIDER---------------*/
 div.slider{
     margin-top:50px;
-    height: 20vh;
+    overflow: hidden;
+    height: 200px;
     // background-color: silver;
     position: relative;
 }
@@ -96,7 +97,6 @@ div.slider{
 .slider figure{
     width:100%;
     position: relative;
-    margin: 1rem 0;
     left: 0;
    
 }
@@ -107,7 +107,8 @@ div.slider{
     left: 0;
     display: block;
     transition: 3s ease-in-out;
-}   
+} 
+/*LOGO*/  
 .slider::before{
     content:'';
     position: absolute;
@@ -123,15 +124,15 @@ div.slider{
 /*------------------Main ----------------*/
 main{
     width: 100%;
-    margin: 9rem 0 1rem 0;
-   font-family: 'Dancing Script', cursive;
+    margin: 5rem 0 1rem 0;
    font-size:1.1rem;
    line-height: 1.5rem;
 }
 .gioiThieu{
-   
+  
     .content{
        padding: .5rem 1rem;
+       height: 500px;
     }
     .content div{
         padding: .5rem 0;
@@ -173,10 +174,12 @@ footer {
         font-size:.7rem;
         color:#404d0b;
     }
-    ul li a{
+    ul li a:not(:first-child){
         text-decoration: none;
         color: #404d0b;
+        border-bottom: dotted gray 2px;
     }
+
     ul li i{
         margin: 2%;
         font-size: 1rem;

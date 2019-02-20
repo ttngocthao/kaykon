@@ -99,7 +99,7 @@ html {
 
 /*------------BODY--------------*/
 body {
-  font-family: "Muli", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: .9rem;
   line-height: 1rem;
@@ -176,13 +176,13 @@ header .banner img {
 /*-----------------SLIDER---------------*/
 div.slider {
   margin-top: 50px;
-  height: 20vh;
+  overflow: hidden;
+  height: 200px;
   position: relative; }
 
 .slider figure {
   width: 100%;
   position: relative;
-  margin: 1rem 0;
   left: 0; }
 
 .slider figure img {
@@ -193,6 +193,7 @@ div.slider {
   display: block;
   transition: 3s ease-in-out; }
 
+/*LOGO*/
 .slider::before {
   content: '';
   position: absolute;
@@ -208,13 +209,13 @@ div.slider {
 /*------------------Main ----------------*/
 main {
   width: 100%;
-  margin: 9rem 0 1rem 0;
-  font-family: 'Dancing Script', cursive;
+  margin: 5rem 0 1rem 0;
   font-size: 1.1rem;
   line-height: 1.5rem; }
 
 .gioiThieu .content {
-  padding: .5rem 1rem; }
+  padding: .5rem 1rem;
+  height: 500px; }
 .gioiThieu .content div {
   padding: .5rem 0; }
 .gioiThieu .follows {
@@ -242,9 +243,10 @@ footer {
     list-style: none;
     font-size: .7rem;
     color: #404d0b; }
-  footer ul li a {
+  footer ul li a:not(:first-child) {
     text-decoration: none;
-    color: #404d0b; }
+    color: #404d0b;
+    border-bottom: dotted gray 2px; }
   footer ul li i {
     margin: 2%;
     font-size: 1rem;
@@ -257,6 +259,41 @@ footer {
     text-align: right;
     color: gray; }
 
+@media only screen and (min-width: 35rem) {
+  /*--------------------logo---------------------*/
+  .slider::before {
+    height: 75px;
+    width: 75px; }
+
+  /*-------------location---------------------*/
+  .location {
+    width: 75px;
+    height: 37.5px; }
+    .location i {
+      font-size: 1.2rem; }
+
+  /*---------------Slider---------------------*/
+  div.slider {
+    height: 400px; }
+
+  /*-----------------Main -------------------*/
+  main {
+    width: 100%;
+    margin: 10rem 0 1rem 0;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: red; }
+
+  .gioiThieu .content {
+    padding: .5rem 1rem;
+    height: 500px; }
+  .gioiThieu .content div {
+    padding: .5rem 0; }
+  .gioiThieu .follows {
+    margin: 1rem 0 .5rem 0; }
+  .gioiThieu .follows figure img {
+    margin: 1rem;
+    width: 10%; } }
 /*end media query*/
 @media only screen and (min-width: 60rem) {
   /*================ HEADER ================*/
@@ -281,5 +318,34 @@ footer {
       cursor: pointer;
       align-items: center; }
     .bigScreen ul li:hover {
-      background-color: #93ae26; } }
+      background-color: #93ae26; }
+
+  /*---------------Slider---------------------*/
+  div.slider {
+    height: 600px; }
+
+  /*------------------Main---------------*/
+  .gioiThieu .follows figure img {
+    margin: 1rem;
+    width: 5%; }
+
+  /*--------------Footer-----------------*/
+  footer figure:nth-child(2) {
+    display: none;
+    /*this pic for small screen*/ }
+  footer figure:nth-child(1) {
+    display: block;
+    /*this pic for bigger screen*/ }
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: .5rem 0;
+    width: 100%;
+    text-align: center; }
+  footer ul li {
+    font-size: .9rem; }
+  footer ul li i {
+    font-size: 1.1rem; }
+  footer p {
+    font-size: .7rem; } }
 /*end media query*/

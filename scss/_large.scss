@@ -29,3 +29,46 @@ header {
         background-color: darken($color: $primaryColor, $amount: 10%);
     }
 }
+/*---------------Slider---------------------*/
+div.slider{
+    height: 600px;
+  
+}
+/*------------------Main---------------*/
+.gioiThieu{  
+    
+    .follows figure img{
+        margin: 1rem;
+        width:5%;
+    }
+}
+/*--------------Footer-----------------*/
+footer {
+    
+    figure:nth-child(2){
+        display: none;/*this pic for small screen*/
+    }
+    
+    figure:nth-child(1){
+        display: block;/*this pic for bigger screen*/
+    }
+    
+    ul{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       margin: .5rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    ul li{
+        font-size:.9rem;
+    }    
+    ul li i{        
+        font-size: 1.1rem;
+    }
+    
+    p{
+        font-size:.7rem;
+    }
+   
+}
