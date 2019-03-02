@@ -226,7 +226,9 @@ footer {
         color: #404d0b;
         border-bottom: dotted gray 2px;
     }
-
+    ul li a{
+        text-decoration: none;
+    }
     ul li i{
         margin: 2%;
         font-size: 1rem;

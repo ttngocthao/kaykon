@@ -284,6 +284,8 @@ footer {
     text-decoration: none;
     color: #404d0b;
     border-bottom: dotted gray 2px; }
+  footer ul li a {
+    text-decoration: none; }
   footer ul li i {
     margin: 2%;
     font-size: 1rem;
