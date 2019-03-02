@@ -40,6 +40,7 @@ header{
 }
 .menuIcon {
     text-align: right;
+    cursor: pointer;
     i{
         padding: .5rem;
         font-size: 1.5rem;
@@ -66,8 +67,8 @@ header{
 .show{
     display:block !important;
 }
-.actived{
-    color:red!important;
+.actived li{
+    background-color:rgba($secondaryColor, .8) !important;
 }
 /*--------------Side Bar------------------*/
 .location{
@@ -89,7 +90,7 @@ header{
 div.slider{
     margin-top:50px;
     overflow: hidden;
-    height: 200px;
+    height: 50vh;
     // background-color: silver;
     position: relative;
 }
@@ -124,19 +125,50 @@ div.slider{
 /*------------------Main ----------------*/
 main{
     width: 100%;
-    margin: 5rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
    font-size:1.1rem;
    line-height: 1.5rem;
 }
 .gioiThieu{
-  
+    font-size: .8rem;
     .content{
        padding: .5rem 1rem;
-       height: 500px;
+       height: auto;
+       text-align: left;
     }
-    .content div{
-        padding: .5rem 0;
+    .content h2{
+        font-size: .9rem;
     }
+    .content {
+        padding: .7rem;
+        border: .1rem solid rgb(255, 255, 255);
+        border-radius: 15px;
+        
+    }
+    .wrapper{
+        background-size: cover;
+        background-repeat: none;
+        border-radius: 20px;
+        border: 1px solid white;
+        box-shadow: 3px 3px 3px gray;
+    }
+    .forWhom .wrapper{
+        background-image: url('../images/slideshow/glarus_s.jpg');
+        
+    }    
+    .montessori .wrapper{
+        background-image: url('../images/slideshow/beautifulLanscape.jpg');
+    }
+    .curriculum .wrapper{
+        background-image: url('../images/slideshow/nature-wallpapers-8.jpg');
+    }
+    .wrapper div{
+        width:80%;
+        margin: 1rem auto;
+       background-color: rgba($color: #fff, $alpha: .5);
+       padding: .5rem;
+    }
+    
     .follows{
         margin:1rem 0 .5rem 0;
     }
@@ -145,7 +177,22 @@ main{
         width:15%;
     }
 }
+/*--------FOR WHOM -------------------*/
+.forWhom-info{
+    font-size: .8rem;
+    width: 80%;
+    margin: 0 auto;
+    h1{
+        font-size: 1.1rem;
 
+    }
+    figure img{
+        width: 90%;
+    }
+    .info{
+        margin: 2rem 0;
+    }
+}
 
 /*-------------MATERIALS---------------*/
 

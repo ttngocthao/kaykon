@@ -43,3 +43,16 @@ main{
         width:10%;
     }
 }
+/*----------FOR WHOM----------*/
+.forWhom-info{
+    width: 90%;
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        grid-column-gap: .5rem;
+    }
+    figure img{
+        width: 100%;
+    }
+}
