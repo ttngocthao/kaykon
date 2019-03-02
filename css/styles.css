@@ -289,7 +289,8 @@ footer {
   footer ul li i {
     margin: 2%;
     font-size: 1rem;
-    transition: .2s; }
+    transition: .2s;
+    color: #404d0b; }
   footer ul li:first-child i {
     animation: changeColor 2s infinite; }
   footer p {
