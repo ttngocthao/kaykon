@@ -31,16 +31,22 @@ header {
 }
 /*---------------Slider---------------------*/
 div.slider{
-    height: 600px;
+    height: 800px;
   
 }
 /*------------------Main---------------*/
 .gioiThieu{  
-    
-    .follows figure img{
-        margin: 1rem;
-        width:5%;
-    }
+    display: grid;
+    width: 90%;
+    margin:0 auto;
+    grid-template-columns: repeat(3,1fr);
+   .content .wrapper div{
+      height: 308px;
+   }
+}
+.follows figure img{
+    margin: 1rem;
+    width:5%;
 }
 /*--------------Footer-----------------*/
 footer {

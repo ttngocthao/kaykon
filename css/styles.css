@@ -314,26 +314,15 @@ footer {
 
   /*---------------Slider---------------------*/
   div.slider {
-    height: 400px; }
+    height: 480px; }
 
   /*-----------------Main -------------------*/
   main {
     width: 100%;
-    margin: 10rem 0 1rem 0;
+    margin: 5rem 0 1rem 0;
     font-size: 1.2rem;
     line-height: 1.6rem;
     color: red; }
-
-  .gioiThieu .content {
-    padding: .5rem 1rem;
-    height: 500px; }
-  .gioiThieu .content div {
-    padding: .5rem 0; }
-  .gioiThieu .follows {
-    margin: 1rem 0 .5rem 0; }
-  .gioiThieu .follows figure img {
-    margin: 1rem;
-    width: 10%; }
 
   /*----------FOR WHOM----------*/
   .forWhom-info {
@@ -373,10 +362,18 @@ footer {
 
   /*---------------Slider---------------------*/
   div.slider {
-    height: 600px; }
+    height: 800px; }
 
   /*------------------Main---------------*/
-  .gioiThieu .follows figure img {
+  .gioiThieu {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr); }
+    .gioiThieu .content .wrapper div {
+      height: 308px; }
+
+  .follows figure img {
     margin: 1rem;
     width: 5%; }
 
