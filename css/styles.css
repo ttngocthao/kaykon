@@ -243,11 +243,13 @@ main {
     margin: 1rem auto;
     background-color: rgba(255, 255, 255, 0.7);
     padding: .5rem; }
-  .gioiThieu .follows {
-    margin: 1rem 0 .5rem 0; }
-  .gioiThieu .follows figure img {
-    margin: .5rem;
-    width: 15%; }
+
+.follows {
+  margin: 1rem 0 .5rem 0; }
+
+.follows figure img {
+  margin: .5rem;
+  width: 15%; }
 
 /*--------FOR WHOM -------------------*/
 .forWhom-info {
