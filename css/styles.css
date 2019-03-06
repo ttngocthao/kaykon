@@ -211,38 +211,33 @@ div.slider {
 main {
   width: 100%;
   margin: 1rem 0 1rem 0;
-  font-size: 1.1rem;
   line-height: 1.5rem; }
 
-.gioiThieu {
-  font-size: .8rem; }
-  .gioiThieu .content {
-    padding: .5rem 1rem;
-    height: auto;
-    text-align: left; }
-  .gioiThieu .content h2 {
-    font-size: .9rem; }
-  .gioiThieu .content {
-    padding: .7rem;
-    border: 0.1rem solid white;
-    border-radius: 15px; }
-  .gioiThieu .wrapper {
-    background-size: cover;
-    background-repeat: none;
-    border-radius: 20px;
-    border: 1px solid white;
-    box-shadow: 3px 3px 3px gray; }
-  .gioiThieu .forWhom .wrapper {
-    background-image: url("../images/slideshow/glarus_s.jpg"); }
-  .gioiThieu .montessori .wrapper {
-    background-image: url("../images/slideshow/beautifulLanscape.jpg"); }
-  .gioiThieu .curriculum .wrapper {
-    background-image: url("../images/slideshow/nature-wallpapers-8.jpg"); }
-  .gioiThieu .wrapper div {
-    width: 80%;
-    margin: 1rem auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: .5rem; }
+.gioiThieu .content {
+  padding: .5rem 1rem;
+  height: auto;
+  text-align: left; }
+.gioiThieu .content {
+  padding: .7rem;
+  border: 0.1rem solid white;
+  border-radius: 15px; }
+.gioiThieu .wrapper {
+  background-size: cover;
+  background-repeat: none;
+  border-radius: 20px;
+  border: 1px solid white;
+  box-shadow: 3px 3px 3px gray; }
+.gioiThieu .forWhom .wrapper {
+  background-image: url("../images/slideshow/glarus_s.jpg"); }
+.gioiThieu .montessori .wrapper {
+  background-image: url("../images/slideshow/beautifulLanscape.jpg"); }
+.gioiThieu .curriculum .wrapper {
+  background-image: url("../images/slideshow/nature-wallpapers-8.jpg"); }
+.gioiThieu .wrapper div {
+  width: 80%;
+  margin: 1rem auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: .5rem; }
 
 .follows {
   margin: 1rem 0 .5rem 0; }
@@ -253,17 +248,41 @@ main {
 
 /*--------FOR WHOM -------------------*/
 .forWhom-info {
-  font-size: .8rem;
   width: 80%;
   margin: 0 auto; }
-  .forWhom-info h1 {
-    font-size: 1.1rem; }
   .forWhom-info figure img {
     width: 90%; }
   .forWhom-info .info {
     margin: 2rem 0; }
 
-/*-------------MATERIALS---------------*/
+/*--------------MONTESSORI-------------*/
+.montessori .content {
+  width: 90%;
+  margin: 0 auto; }
+  .montessori .content span {
+    font-style: italic;
+    color: #404d0b;
+    border-bottom: dotted #f8a01a 2px; }
+
+.montessori .content figure {
+  width: 80%;
+  margin: .5rem auto; }
+
+.montessori .content figure img {
+  width: 100%; }
+
+/*-------------CURRICULUM---------------*/
+.chuongTrinhHoc .wrapper {
+  width: 90%;
+  margin: 1rem auto; }
+
+.chuongTrinhHoc figure {
+  width: 90%;
+  margin: .5rem auto; }
+
+.chuongTrinhHoc figure img {
+  width: 100%; }
+
 /*--------------Footer-----------------*/
 @keyframes changeColor {
   100% {
@@ -280,7 +299,7 @@ footer {
     margin: .5rem 2%; }
   footer ul li {
     list-style: none;
-    font-size: .7rem;
+    font-size: .8rem;
     color: #404d0b; }
   footer ul li a:not(:first-child) {
     text-decoration: none;
@@ -324,7 +343,19 @@ footer {
     margin: 5rem 0 1rem 0;
     font-size: 1.2rem;
     line-height: 1.6rem;
-    color: red; }
+    color: purple; }
+
+  .gioiThieu {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto; }
+    .gioiThieu .content .wrapper div {
+      height: 308px; }
+
+  .follows figure img {
+    margin: 1rem;
+    width: 10%; }
 
   /*----------FOR WHOM----------*/
   .forWhom-info {
@@ -335,7 +366,12 @@ footer {
       align-items: center;
       grid-column-gap: .5rem; }
     .forWhom-info figure img {
-      width: 100%; } }
+      width: 100%; }
+
+  /*------------FOOTER----------*/
+  footer ul li {
+    list-style: none;
+    font-size: .9rem; } }
 /*end media query*/
 @media only screen and (min-width: 60rem) {
   /*================ HEADER ================*/
@@ -368,12 +404,8 @@ footer {
 
   /*------------------Main---------------*/
   .gioiThieu {
-    display: grid;
-    width: 90%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3, 1fr); }
-    .gioiThieu .content .wrapper div {
-      height: 308px; }
+    grid-template-columns: repeat(3, 1fr);
+    color: black; }
 
   .follows figure img {
     margin: 1rem;

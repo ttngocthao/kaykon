@@ -24,25 +24,23 @@ main{
     margin: 5rem 0 1rem 0;
    font-size:1.2rem;
    line-height: 1.6rem;
-   color: red;
+   color: purple;
 }
-// .gioiThieu{
-  
-//     .content{
-//        padding: .5rem 1rem;
-//        height: 500px;
-//     }
-//     .content div{
-//         padding: .5rem 0;
-//     }
-//     .follows{
-//         margin:1rem 0 .5rem 0;
-//     }
-//     .follows figure img{
-//         margin: 1rem;
-//         width:10%;
-//     }
-// }
+.gioiThieu{
+    width: 90%;
+    display: grid;   
+    grid-template-columns: repeat(2,1fr);     
+    margin:0 auto;
+    .content .wrapper div{
+        height: 308px;
+     }
+}
+    
+.follows figure img{
+    margin: 1rem;
+    width:10%;
+}
+
 /*----------FOR WHOM----------*/
 .forWhom-info{
     width: 90%;
@@ -54,5 +52,12 @@ main{
     }
     figure img{
         width: 100%;
+    }
+}
+/*------------FOOTER----------*/
+footer{
+    ul li{
+        list-style: none;
+        font-size:.9rem;
     }
 }

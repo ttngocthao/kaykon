@@ -35,14 +35,9 @@ div.slider{
   
 }
 /*------------------Main---------------*/
-.gioiThieu{  
-    display: grid;
-    width: 90%;
-    margin:0 auto;
+.gioiThieu{ 
     grid-template-columns: repeat(3,1fr);
-   .content .wrapper div{
-      height: 308px;
-   }
+   color:black;
 }
 .follows figure img{
     margin: 1rem;

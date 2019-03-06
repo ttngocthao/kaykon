@@ -126,18 +126,18 @@ div.slider{
 main{
     width: 100%;
     margin: 1rem 0 1rem 0;
-   font-size:1.1rem;
+  
    line-height: 1.5rem;
 }
 .gioiThieu{
-    font-size: .8rem;
+  
     .content{
        padding: .5rem 1rem;
        height: auto;
        text-align: left;
     }
     .content h2{
-        font-size: .9rem;
+       
     }
     .content {
         padding: .7rem;
@@ -180,11 +180,11 @@ main{
 }
 /*--------FOR WHOM -------------------*/
 .forWhom-info{
-    font-size: .8rem;
+   
     width: 80%;
     margin: 0 auto;
     h1{
-        font-size: 1.1rem;
+        
 
     }
     figure img{
@@ -194,9 +194,36 @@ main{
         margin: 2rem 0;
     }
 }
+/*--------------MONTESSORI-------------*/
+.montessori .content{
+    width:90%;
+    margin: 0 auto;
+    span{
+        font-style: italic;
+        color:$fontColor;
+        border-bottom: dotted $secondaryColor 2px;
+    }
+}
+.montessori .content figure{
+    width: 80%;
+    margin: .5rem auto;
+}
+.montessori .content figure img{
+    width:100%;
+}
 
-/*-------------MATERIALS---------------*/
-
+/*-------------CURRICULUM---------------*/
+.chuongTrinhHoc .wrapper{
+    width: 90%;
+    margin: 1rem auto;
+}
+.chuongTrinhHoc figure {
+    width:90%;
+    margin: .5rem auto;
+}
+.chuongTrinhHoc figure img{
+    width:100%;
+}
 
 
 /*--------------Footer-----------------*/
@@ -219,7 +246,7 @@ footer {
     }
     ul li{
         list-style: none;
-        font-size:.7rem;
+        font-size:.8rem;
         color:#404d0b;
     }
     ul li a:not(:first-child){
