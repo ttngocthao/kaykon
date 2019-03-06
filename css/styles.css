@@ -264,6 +264,9 @@ main {
     color: #404d0b;
     border-bottom: dotted #f8a01a 2px; }
 
+.montessori .content p {
+  margin: .5rem auto; }
+
 .montessori .content figure {
   width: 80%;
   margin: .5rem auto; }

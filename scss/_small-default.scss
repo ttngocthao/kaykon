@@ -193,11 +193,15 @@ main{
 .montessori .content{
     width:90%;
     margin: 0 auto;
+    
     span{
         font-style: italic;
         color:$fontColor;
         border-bottom: dotted $secondaryColor 2px;
     }
+}
+.montessori .content p{
+    margin:.5rem auto;
 }
 .montessori .content figure{
     width: 80%;
