@@ -1,63 +1,71 @@
 /*--------------------logo---------------------*/
-.slider::before{    
-    height: 75px;
-    width: 75px;   
+.slider::before {
+  height: 75px;
+  width: 75px;
 }
 /*-------------location---------------------*/
-.location{
-   
-   width: 75px;
-   height: 37.5px;
+.location {
+  width: 75px;
+  height: 37.5px;
 
-   i{
-       font-size: 1.2rem;
-   }
+  i {
+    font-size: 1.2rem;
+  }
 }
 /*---------------Slider---------------------*/
-div.slider{
-    height: 480px;
-  
+div.slider {
+  height: 480px;
 }
 /*-----------------Main -------------------*/
-main{
-    width: 100%;
-    margin: 5rem 0 1rem 0;
-   font-size:1.2rem;
-   line-height: 1.6rem;
-   color: purple;
+main {
+  width: 100%;
+  margin: 5rem 0 1rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: purple;
 }
-.gioiThieu{
-    width: 90%;
-    display: grid;   
-    grid-template-columns: repeat(2,1fr);     
-    margin:0 auto;
-    .content .wrapper div{
-        height: 308px;
-     }
+.gioiThieu {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 0 auto;
+  .content .wrapper div {
+    min-height: 308px;
+  }
 }
-    
-.follows figure img{
-    margin: 1rem;
-    width:10%;
+
+.follows figure img {
+  margin: 1rem;
+  width: 10%;
 }
 
 /*----------FOR WHOM----------*/
-.forWhom-info{
-    width: 90%;
-    .info{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-        grid-column-gap: .5rem;
-    }
-    figure img{
-        width: 100%;
-    }
+.forWhom-info {
+  width: 90%;
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    grid-column-gap: 0.5rem;
+  }
+  figure img {
+    width: 100%;
+  }
 }
 /*------------FOOTER----------*/
-footer{
-    ul li{
-        list-style: none;
-        font-size:.9rem;
-    }
+footer {
+  ul li {
+    list-style: none;
+    font-size: 0.9rem;
+  }
+}
+/*-----------THU VIEN HINH -------------*/
+.thuVienHinh {
+  .photo-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .photo-wrapper li {
+    height: 150px;
+  }
 }

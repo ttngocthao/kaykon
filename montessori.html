@@ -1,125 +1,161 @@
 <!DOCTYPE html>
-<html lang='vi'>
-    <head>
-        <!--TELL PHONES NOT TO LIE ABOUT THEIR WIDTH-->
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-        <!--EMBED GOOGLE FONT-->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&amp;subset=vietnamese" rel="stylesheet">
-         <!--EMBED FONT AWESOME-->
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+<html lang="vi">
+  <head>
+    <!--TELL PHONES NOT TO LIE ABOUT THEIR WIDTH-->
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <!--EMBED GOOGLE FONT-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,700&amp;subset=vietnamese"
+      rel="stylesheet"
+    />
+    <!--EMBED FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+      integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+      crossorigin="anonymous"
+    />
 
-        <meta charset="utf-8">
-        <title>KayKon Montessori Kindergarden</title>
-        <link href='css/styles.css' rel='stylesheet'>
-        <link rel="icon" href="images/iconlogo.png">
-    </head>
-    <body>
+    <meta charset="utf-8" />
+    <title>KayKon Montessori Kindergarden</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="images/iconlogo.png" />
+  </head>
+  <body>
+    <!--page header goes here-->
+    <header>
+      <nav>
+        <!--FOR SMALL DEVICES-->
+        <div class="navbar mobile">
+          <div class="menuIcon">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menuList">
+            <a href="index.html"><li>Giới thiệu</li></a>
+            <a href="montessori.html" class="actived"><li>Montessori</li></a>
+            <a href="forWhom.html"><li>Đối tượng học</li></a>
+            <a href="chuongTrinhHoc.html"><li>Chương trình học</li></a>
+            <!-- <a href="thucDon.html"><li>Thực đơn</li></a> -->
+            <a href="thuVienHinh.html"><li>Thư viện hình</li></a>
+            <!-- <a href="tuyenDung.html"><li>Tuyển Dụng</li></a>
+            <a href="lienHe.html"><li>Liên Hệ</li></a> -->
+          </ul>
+        </div>
 
-         
-        <!--page header goes here-->
-        <header>
-            <nav>
-                <!--FOR SMALL DEVICES-->
-                   <div class='navbar mobile'>
-                       <div class='menuIcon'>
-                            <i class="fas fa-bars"></i>
-                       </div>
-                       <ul class='menuList'>
-                            <a href="index.html"><li>Giới thiệu</li></a>
-                            <a href="montessori.html" class='actived'><li>Montessori</li></a>
-                            <a href="forWhom.html" ><li>Đối tượng học</li></a>
-                            <a href="chuongTrinhHoc.html"><li>Chương trình học</li></a>  
-                            <!-- <a href="thucDon.html"><li>Thực đơn</li></a>  
-                            <a href="thuVienHinh.html"><li>Thư viện hình</li></a>
-                            <a href="tuyenDung.html"><li>Tuyển Dụng</li></a>
+        <!-- FOR BIGER SCREEN-->
+        <div class="navbar bigScreen">
+          <ul>
+            <a href="index.html"><li>Giới thiệu</li></a>
+            <a href="montessori.html" class="actived"><li>Montessori</li></a>
+            <a href="forWhom.html"><li>Đối tượng học</li></a>
+            <a href="chuongTrinhHoc.html"><li>Chương trình học</li></a>
+            <!-- <a href="thucDon.html"><li>Thực đơn</li></a>   -->
+            <a href="thuVienHinh.html"><li>Thư viện hình</li></a>
+            <!-- <a href="tuyenDung.html"><li>Tuyển Dụng</li></a>
                             <a href="lienHe.html"><li>Liên Hệ</li></a> -->
-                       </ul>
-                   </div>
-   
-               <!-- FOR BIGER SCREEN-->
-                   <div class='navbar bigScreen'>  
-                       <ul>                    
-                            <a href="index.html" ><li>Giới thiệu</li></a>
-                            <a href="montessori.html" class='actived'><li>Montessori</li></a>
-                            <a href="forWhom.html" ><li>Đối tượng học</li></a>
-                            <a href="chuongTrinhHoc.html"><li>Chương trình học</li></a>  
-                            <!-- <a href="thucDon.html"><li>Thực đơn</li></a>  
-                            <a href="thuVienHinh.html"><li>Thư viện hình</li></a>
-                            <a href="tuyenDung.html"><li>Tuyển Dụng</li></a>
-                            <a href="lienHe.html"><li>Liên Hệ</li></a> -->
-                       </ul>
-                   </div>
-            </nav>
-            <a href="https://goo.gl/maps/EvpJXC72s7G2" target="blank">
-                <div class='location' >
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-            </a>
-            <div class='slider'>                
-                <figure>
-                    <img src='images/happyChildren.png'>
-                    
-                </figure>    
-            </div>
-            
-            <!--page navigation goes here-->
-            
-   
-        </header>
+          </ul>
+        </div>
+      </nav>
+      <a href="https://goo.gl/maps/EvpJXC72s7G2" target="blank">
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+      </a>
+      <div class="slider">
+        <figure>
+          <img src="images/happyChildren.png" />
+        </figure>
+      </div>
 
-       
+      <!--page navigation goes here-->
+    </header>
 
-        <!--Page content goes here-->
-        <main class='montessori'>
-            <h1>Montessori là gì?</h1>
-            <div>
-                <div class='content'>
-                    <p>Montessori là phương pháp giáo dục của bà Maria Montessori - nữ bác sĩ đầu tiên của Ý, là nhà giáo dục 3 lần được đề cử giải Nobel vì hòa bình.</p>
-                    <figure>
-                        <img src='images/whatIsIt/montessor.png'/>
-                    </figure>
-                    <p>Sau khi tốt nghiệp bác sĩ, bà làm ở bệnh viện tâm thần nơi có những đứa trẻ tâm thần, những đứa trẻ bình thường là con bệnh nhân tâm thần. Những trẻ này bị đối xử bất bình đẳng, ở trong môi trường hỗn loạn làm gia tăng xu hướng rối loạn hành vi. </p>
-                    <figure>
-                        <img src='images/whatIsIt/demo1.png'/>
-                    </figure>
-                    <p>Bà cho rằng <span>"đây là vấn đề của giáo dục, không phải vấn để của y học"</span>. Bà phát triển phương pháp giáo dục của mình và giúp những đứa trẻ trở nên bình thường, có thể viết và làm toán như trẻ bình thường.</p>
-                    <p>06/01/1907 mở "Nhà Trẻ" - Casa dei Bambini đầu tiên cho con của công nhân nghèo ở Rome. Bà cho rằng phương pháp giáo dục của mình giúp trẻ rối loạn tâm thần và hành vi có thể bình thường hóa, thì phương pháp đó áp dụng cho trẻ bình thường sẽ mở ra những tiềm năng bất ngờ của trẻ.</p>
-                    <figure>
-                        <img src='images/whatIsIt/demoMap.png'/>
-                    </figure>
-                    <p>Đến 1911: phương pháp giáo dục Montessori lan rộng toàn nước Ý. Phương pháp Montessori nhanh chóng nổi tiếng và lan rộng tới Mỹ (1911-1912), Tây Ban Nha (1915), Hà Lan (1917), Anh (1919), Ấn Độ (1939), và Pháp, Đức, Thụy Sỹ, Bỉ, Nga, Serbia,Canada, Nhật Bản, Phillipine, Indonesia, Úc và New Zealand</p>
-                </div>
-            </div>
-        </main>
+    <!--Page content goes here-->
+    <main class="montessori">
+      <h1>Montessori là gì?</h1>
+      <div>
+        <div class="content">
+          <p>
+            Montessori là phương pháp giáo dục của bà Maria Montessori - nữ bác
+            sĩ đầu tiên của Ý, là nhà giáo dục 3 lần được đề cử giải Nobel vì
+            hòa bình.
+          </p>
+          <figure>
+            <img src="images/whatIsIt/montessor.png" />
+          </figure>
+          <p>
+            Sau khi tốt nghiệp bác sĩ, bà làm ở bệnh viện tâm thần nơi có những
+            đứa trẻ tâm thần, những đứa trẻ bình thường là con bệnh nhân tâm
+            thần. Những trẻ này bị đối xử bất bình đẳng, ở trong môi trường hỗn
+            loạn làm gia tăng xu hướng rối loạn hành vi.
+          </p>
+          <figure>
+            <img src="images/whatIsIt/demo1.png" />
+          </figure>
+          <p>
+            Bà cho rằng
+            <span
+              >"đây là vấn đề của giáo dục, không phải vấn để của y học"</span
+            >. Bà phát triển phương pháp giáo dục của mình và giúp những đứa trẻ
+            trở nên bình thường, có thể viết và làm toán như trẻ bình thường.
+          </p>
+          <p>
+            06/01/1907 mở "Nhà Trẻ" - Casa dei Bambini đầu tiên cho con của công
+            nhân nghèo ở Rome. Bà cho rằng phương pháp giáo dục của mình giúp
+            trẻ rối loạn tâm thần và hành vi có thể bình thường hóa, thì phương
+            pháp đó áp dụng cho trẻ bình thường sẽ mở ra những tiềm năng bất ngờ
+            của trẻ.
+          </p>
+          <figure>
+            <img src="images/whatIsIt/demoMap.png" />
+          </figure>
+          <p>
+            Đến 1911: phương pháp giáo dục Montessori lan rộng toàn nước Ý.
+            Phương pháp Montessori nhanh chóng nổi tiếng và lan rộng tới Mỹ
+            (1911-1912), Tây Ban Nha (1915), Hà Lan (1917), Anh (1919), Ấn Độ
+            (1939), và Pháp, Đức, Thụy Sỹ, Bỉ, Nga, Serbia,Canada, Nhật Bản,
+            Phillipine, Indonesia, Úc và New Zealand
+          </p>
+        </div>
+      </div>
+    </main>
 
-        <!--Page footer goes here-->
-        <footer>
-            <figure>
-                <img src='images/footer-banner.png'>
-            </figure>
-            <figure>
-                <img src='images/footer-banner-small.png'>
-            </figure>
-            <!-- <div class='contact'>
+    <!--Page footer goes here-->
+    <footer>
+      <figure>
+        <img src="images/footer-banner.png" />
+      </figure>
+      <figure>
+        <img src="images/footer-banner-small.png" />
+      </figure>
+      <!-- <div class='contact'>
                 <div class='address'></div>
                 <div class='map'></div>
             </div> -->
-            <ul>
-                <li>
-                    <a href="https://goo.gl/maps/EvpJXC72s7G2" target="blank">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </a>
-                    11F/22 Bạch Đằng, P.2, Q.Tân Bình, tpHCM
-                </li>
-                <li><i class="fas fa-phone-volume"></i><a href="tel:0917345801">0917345801</a> & <a href="tel:0983201317">0983201317</a></li>
-                <li><i class="fas fa-envelope-open"></i>kaykonkindergarten@gmail.com</li>
-            </ul>
-            <p>This website is developed by webdeveloper@thaotruong.uk</p>
-        </footer>
+      <ul>
+        <li>
+          <a href="https://goo.gl/maps/EvpJXC72s7G2" target="blank">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+          11F/22 Bạch Đằng, P.2, Q.Tân Bình, tpHCM
+        </li>
+        <li>
+          <i class="fas fa-phone-volume"></i
+          ><a href="tel:0917345801">0917345801</a> &
+          <a href="tel:0983201317">0983201317</a>
+        </li>
+        <li>
+          <i class="fas fa-envelope-open"></i>kaykonkindergarten@gmail.com
+        </li>
+      </ul>
+      <p>This website is developed by webdeveloper@thaotruong.uk</p>
+    </footer>
 
-        <!--Scripts go here-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src='scripts/menu.js'></script>
-       
-    </body>
+    <!--Scripts go here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/menu.js"></script>
+  </body>
 </html>

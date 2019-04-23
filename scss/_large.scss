@@ -1,75 +1,81 @@
 /*================ HEADER ================*/
 header {
-    position: relative;
+  position: relative;
 }
 /*=============== NAV =================*/
 .mobile .menuIcon,
-.mobile .menuList{
-    display: none;
+.mobile .menuList {
+  display: none;
 }
-.bigScreen{
-    display: block;
-    ul{
-        display: flex;
-        justify-content: space-around;
-    }
-    ul a{
-        text-decoration: none;
-        color: $fontColor;
-    }
-    ul li{
-        padding:.7rem .5rem;
-        cursor: pointer;
-        align-items: center;
-    }
-    // ul li:last-child{
-    //     flex-grow: 2;
-    // }
-    ul li:hover{
-        background-color: darken($color: $primaryColor, $amount: 10%);
-    }
+.bigScreen {
+  display: block;
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  ul a {
+    text-decoration: none;
+    color: $fontColor;
+  }
+  ul li {
+    padding: 0.7rem 0.5rem;
+    cursor: pointer;
+    align-items: center;
+  }
+  // ul li:last-child{
+  //     flex-grow: 2;
+  // }
+  ul li:hover {
+    background-color: darken($color: $primaryColor, $amount: 10%);
+  }
 }
 /*---------------Slider---------------------*/
-div.slider{
-    height: 800px;
-  
+div.slider {
+  height: 800px;
 }
 /*------------------Main---------------*/
-.gioiThieu{ 
-    grid-template-columns: repeat(3,1fr);
-   color:black;
+.gioiThieu {
+  grid-template-columns: repeat(3, 1fr);
+  color: black;
 }
-.follows figure img{
-    margin: 1rem;
-    width:5%;
+.follows figure img {
+  margin: 1rem;
+  width: 5%;
 }
 /*--------------Footer-----------------*/
 footer {
-    
-    figure:nth-child(2){
-        display: none;/*this pic for small screen*/
-    }
-    
-    figure:nth-child(1){
-        display: block;/*this pic for bigger screen*/
-    }
-    
-    ul{
-       display: grid;
-       grid-template-columns: repeat(3,1fr);
-       margin: .5rem 0;
-        width: 100%;
-        text-align: center;
-    }
-    ul li{
-        font-size:.9rem;
-    }    
-    ul li i{        
-        font-size: 1.1rem;
-    }
-    
-    p{
-        font-size:.7rem;
-    }
-   
+  figure:nth-child(2) {
+    display: none; /*this pic for small screen*/
+  }
+
+  figure:nth-child(1) {
+    display: block; /*this pic for bigger screen*/
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  ul li {
+    font-size: 0.9rem;
+  }
+  ul li i {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}
+/*---------------THU VIEN HINH---------------*/
+.thuVienHinh {
+  .photo-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .photo-wrapper li {
+    height: 170px;
+  }
 }

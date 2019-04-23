@@ -1,0 +1,90 @@
+[
+  {
+    "albumName": "daily photo at Kaykon",
+    "photoUrls": [
+      "images/dailyImgs/dailyImgs1.jpg",
+      "./images/dailyImgs/dailyImgs2.jpg",
+      "./images/dailyImgs/dailyImgs3.jpg",
+      "./images/dailyImgs/dailyImgs4.jpg",
+      "./images/dailyImgs/dailyImgs5.jpg",
+      "./images/dailyImgs/dailyImgs6.jpg",
+      "./images/dailyImgs/dailyImgs7.jpg",
+      "./images/dailyImgs/dailyImgs8.jpg",
+      "./images/dailyImgs/dailyImgs9.jpg",
+      "./images/dailyImgs/dailyImgs10.jpg",
+      "./images/dailyImgs/dailyImgs11.jpg",
+      "./images/dailyImgs/dailyImgs12.jpg",
+      "./images/dailyImgs/dailyImgs13.jpg",
+      "./images/dailyImgs/dailyImgs14.jpg",
+      "./images/dailyImgs/dailyImgs15.jpg",
+      "./images/dailyImgs/dailyImgs16.jpg",
+      "./images/dailyImgs/dailyImgs17.jpg",
+      "./images/dailyImgs/dailyImgs18.jpg",
+      "./images/dailyImgs/dailyImgs19.jpg",
+      "./images/dailyImgs/dailyImgs20.jpg",
+      "./images/dailyImgs/dailyImgs21.jpg",
+      "./images/dailyImgs/dailyImgs22.jpg"
+    ]
+  },
+  {
+    "albumName": "Field Trip",
+    "photoUrls": [
+      "./images/fieldTrip/fieldTrip1.jpg",
+      "./images/fieldTrip/fieldTrip2.jpg",
+      "./images/fieldTrip/fieldTrip3.jpg",
+      "./images/fieldTrip/fieldTrip4.jpg",
+      "./images/fieldTrip/fieldTrip5.jpg",
+      "./images/fieldTrip/fieldTrip6.jpg",
+      "./images/fieldTrip/fieldTrip7.jpg",
+      "./images/fieldTrip/fieldTrip8.jpg",
+      "./images/fieldTrip/fieldTrip9.jpg",
+      "./images/fieldTrip/fieldTrip10.jpg",
+      "./images/fieldTrip/fieldTrip11.jpg",
+      "./images/fieldTrip/fieldTrip12.jpg",
+      "./images/fieldTrip/fieldTrip13.jpg",
+      "./images/fieldTrip/fieldTrip14.jpg",
+      "./images/fieldTrip/fieldTrip15.jpg",
+      "./images/fieldTrip/fieldTrip16.jpg",
+      "./images/fieldTrip/fieldTrip17.jpg",
+      "./images/fieldTrip/fieldTrip18.jpg",
+      "./images/fieldTrip/fieldTrip19.jpg",
+      "./images/fieldTrip/fieldTrip20.jpg"
+    ]
+  },
+  {
+    "albumName": "Happy Easter",
+    "photoUrls": [
+      "./images/happyEaster/happyEaster1.jpg",
+      "./images/happyEaster/happyEaster2.jpg",
+      "./images/happyEaster/happyEaster3.jpg",
+      "./images/happyEaster/happyEaster4.jpg",
+      "./images/happyEaster/happyEaster5.jpg",
+      "./images/happyEaster/happyEaster6.jpg",
+      "./images/happyEaster/happyEaster7.jpg",
+      "./images/happyEaster/happyEaster8.jpg",
+      "./images/happyEaster/happyEaster9.jpg",
+      "./images/happyEaster/happyEaster10.jpg",
+      "./images/happyEaster/happyEaster11.jpg"
+    ]
+  },
+  {
+    "albumName": "Happy Meal",
+    "photoUrls": [
+      "./images/happyMeal/happyMeal1.jpg",
+      "./images/happyMeal/happyMeal2.jpg",
+      "./images/happyMeal/happyMeal3.jpg",
+      "./images/happyMeal/happyMeal4.jpg",
+      "./images/happyMeal/happyMeal5.jpg",
+      "./images/happyMeal/happyMeal6.jpg",
+      "./images/happyMeal/happyMeal7.jpg",
+      "./images/happyMeal/happyMeal8.jpg",
+      "./images/happyMeal/happyMeal9.jpg",
+      "./images/happyMeal/happyMeal10.jpg",
+      "./images/happyMeal/happyMeal11.jpg",
+      "./images/happyMeal/happyMeal12.jpg",
+      "./images/happyMeal/happyMeal13.jpg",
+      "./images/happyMeal/happyMeal14.jpg",
+      "./images/happyMeal/happyMeal15.jpg"
+    ]
+  }
+]

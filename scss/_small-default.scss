@@ -1,275 +1,336 @@
 /*prevent adjustments of font size after oreientation changes in IE on windows phone and ios*/
-html{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%};
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
 /*apply a natural box layout model to all elements*/
-*{-moz-box-sizing: border-box;-webkit-box-sizing: border-box; box-sizing: border-box;}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /*------------BODY--------------*/
-body{
-    font-family: $defaultFont;
-    font-weight: $normalWeight;
-    font-size: .9rem;
-    line-height: 1rem;
-    text-align:center;
+body {
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  text-align: center;
 }
-h1{
-    font-size: 1.5rem;
-    line-height: 2rem;
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
-h2{
-    font-size:1.1rem;
+h2 {
+  font-size: 1.1rem;
 }
 /*---------HEADER-----------*/
-header{
-    .banner{
-        margin-top: 50px;
-    }
-    .banner img{
-        width:100%;
-    }
+header {
+  .banner {
+    margin-top: 50px;
+  }
+  .banner img {
+    width: 100%;
+  }
 }
 /*-----------NAV-----------------*/
-.navbar{
-    background-color: $primaryColor;
-    color:#404d0b;
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 3;
-    width: 100%;
-    height: 50px;
+.navbar {
+  background-color: $primaryColor;
+  color: #404d0b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 50px;
 }
 .menuIcon {
-    text-align: right;
-    cursor: pointer;
-    i{
-        padding: .5rem;
-        font-size: 1.5rem;
-    }
+  text-align: right;
+  cursor: pointer;
+  i {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
 }
-.bigScreen{
-    display:none;
+.bigScreen {
+  display: none;
 }
-.mobile .menuList{
-    display: none;
-    background-color: $primaryColor;
+.mobile .menuList {
+  display: none;
+  background-color: $primaryColor;
 }
-.menuList a{
-    text-decoration: none;
-    color:#404d0b;
+.menuList a {
+  text-decoration: none;
+  color: #404d0b;
 }
-.menuList li{
-    padding: .5rem;
-    transition:.3s  cubic-bezier(0.165, 0.84, 0.44, 1);
+.menuList li {
+  padding: 0.5rem;
+  transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.menuList li:hover{
-    background-color: darken($color: $primaryColor, $amount: 10%);
+.menuList li:hover {
+  background-color: darken($color: $primaryColor, $amount: 10%);
 }
-.show{
-    display:block !important;
+.show {
+  display: block !important;
 }
-.actived li{
-    background-color:rgba($secondaryColor, .8) !important;
+.actived li {
+  background-color: rgba($secondaryColor, 0.8) !important;
 }
 /*--------------Side Bar------------------*/
-.location{
-    clear:both;
-    z-index: 2;
-    position: absolute;
-    right: 0;
-   background-color: orange;
-   width: 50px;
-   height: 25px;
+.location {
+  clear: both;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  background-color: orange;
+  width: 50px;
+  height: 25px;
 
-   i{
-       color:white;
-       padding: 3px 0;
-       margin-left: 15px;
-   }
+  i {
+    color: white;
+    padding: 3px 0;
+    margin-left: 15px;
+  }
 }
 /*-----------------SLIDER---------------*/
-div.slider{
-    margin-top:50px;
-    overflow: hidden;
-    height: 40vh;
-    // background-color: silver;
-    position: relative;
+div.slider {
+  margin-top: 50px;
+  overflow: hidden;
+  height: 40vh;
+  // background-color: silver;
+  position: relative;
 }
 
-.slider figure{
-    width:100%;
-    position: relative;
-    left: 0;
-   
+.slider figure {
+  width: 100%;
+  position: relative;
+  left: 0;
 }
-.slider figure img{
-    width: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-    display: block;
-    transition: 3s ease-in-out;
-} 
-/*LOGO*/  
-.slider::before{
-    content:'';
-    position: absolute;
-    top:0;
-    left:0;
-    height: 50px;
-    width: 50px;
-    background-image: url('../images/logo.jpg');
-    background-position: center;
-    background-size: cover;
-    z-index:2;
+.slider figure img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  transition: 3s ease-in-out;
+}
+/*LOGO*/
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background-image: url("../images/logo.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
 }
 /*------------------Main ----------------*/
-main{
-    width: 100%;
-    margin: 1rem 0 1rem 0;
-  
-   line-height: 1.5rem;
+main {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+
+  line-height: 1.5rem;
 }
-.gioiThieu{
-  
-    .content{
-       padding: .5rem 1rem;
-       height: auto;
-       text-align: left;
-    }
-    
-    .content {
-        padding: .7rem;
-        border: .1rem solid rgb(255, 255, 255);
-        border-radius: 15px;
-        
-    }
-    .wrapper{
-        background-size: cover;
-        background-repeat: none;
-        border-radius: 20px;
-        border: 1px solid white;
-        box-shadow: 3px 3px 3px gray;
-    }
-    .forWhom .wrapper{
-        background-image: url('../images/slideshow/glarus_s.jpg');
-        
-    }    
-    .montessori .wrapper{
-        background-image: url('../images/slideshow/beautifulLanscape.jpg');
-    }
-    .curriculum .wrapper{
-        background-image: url('../images/slideshow/nature-wallpapers-8.jpg');
-    }
-    .wrapper div{
-        width:80%;
-        margin: 1rem auto;
-       background-color: rgba($color: #fff, $alpha: .7);
-       padding: .5rem;
-    }
-    
-   
+.gioiThieu {
+  .content {
+    padding: 0.5rem 1rem;
+    height: auto;
+    text-align: left;
+  }
+
+  .content {
+    padding: 0.7rem;
+    border: 0.1rem solid rgb(255, 255, 255);
+    border-radius: 15px;
+  }
+  .wrapper {
+    background-size: cover;
+    background-repeat: none;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 3px 3px 3px gray;
+  }
+  .forWhom .wrapper {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("../images/dailyImgs/dailyImgs4.jpg");
+  }
+  .montessori .wrapper {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("../images/slideshow/beautifulLanscape.jpg");
+  }
+  .curriculum .wrapper {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("../images/slideshow/nature-wallpapers-8.jpg");
+  }
+  .wrapper div {
+    width: 80%;
+    margin: 1rem auto;
+    // background-color: rgba($color: #fff, $alpha: 0.7);
+    padding: 0.5rem;
+  }
 }
-.follows{
-    margin:1rem 0 .5rem 0;
+.follows {
+  margin: 1rem 0 0.5rem 0;
 }
-.follows figure img{
-    margin: .5rem;
-    width:15%;
+.follows figure img {
+  margin: 0.5rem;
+  width: 15%;
 }
 /*--------FOR WHOM -------------------*/
-.forWhom-info{
-   
-    width: 80%;
-    margin: 0 auto;
-  
-    figure img{
-        width: 90%;
-    }
-    .info{
-        margin: 2rem 0;
-    }
+.forWhom-info {
+  width: 80%;
+  margin: 0 auto;
+
+  figure img {
+    width: 90%;
+  }
+  .info {
+    margin: 2rem 0;
+  }
 }
 /*--------------MONTESSORI-------------*/
-.montessori .content{
-    width:90%;
-    margin: 0 auto;
-    
-    span{
-        font-style: italic;
-        color:$fontColor;
-        border-bottom: dotted $secondaryColor 2px;
-    }
+.montessori .content {
+  width: 90%;
+  margin: 0 auto;
+
+  span {
+    font-style: italic;
+    color: $fontColor;
+    border-bottom: dotted $secondaryColor 2px;
+  }
 }
-.montessori .content p{
-    margin:.5rem auto;
+.montessori .content p {
+  margin: 0.5rem auto;
 }
-.montessori .content figure{
-    width: 80%;
-    margin: .5rem auto;
+.montessori .content figure {
+  width: 80%;
+  margin: 0.5rem auto;
 }
-.montessori .content figure img{
-    width:100%;
+.montessori .content figure img {
+  width: 100%;
 }
 
 /*-------------CURRICULUM---------------*/
-.chuongTrinhHoc .wrapper{
-    width: 90%;
-    margin: 1rem auto;
+.chuongTrinhHoc .wrapper {
+  width: 90%;
+  margin: 1rem auto;
 }
 .chuongTrinhHoc figure {
-    width:90%;
-    margin: .5rem auto;
+  width: 90%;
+  margin: 0.5rem auto;
 }
-.chuongTrinhHoc figure img{
-    width:100%;
+.chuongTrinhHoc figure img {
+  width: 100%;
 }
-
 
 /*--------------Footer-----------------*/
-@keyframes changeColor{
-    100%{color:$secondaryColor;}
+@keyframes changeColor {
+  100% {
+    color: $secondaryColor;
+  }
 }
 footer {
-    
-    text-align: left;
-    background-color: $primaryColor;
-    figure:nth-child(1){
-        display: none;/*this pic for bigger screen*/
-    }
-    figure img{
-        width: 100%;
-    }
-    ul{
-       margin: .5rem 2%; 
-       
-    }
-    ul li{
-        list-style: none;
-        font-size:.8rem;
-        color:#404d0b;
-    }
-    ul li a:not(:first-child){
-        text-decoration: none;
-        color: #404d0b;
-        border-bottom: dotted gray 2px;
-    }
-    ul li a{
-        text-decoration: none;
-    }
-    ul li i{
-        margin: 2%;
-        font-size: 1rem;
-        transition: .2s;
-        color:#404d0b;
-    }
-    ul li:first-child i{
-        animation: changeColor 2s infinite;
-    }
-    p{
-        font-size:.5rem;
-        margin-right: 2%;
-        text-align: right;
-        color:gray;
-    }
-   
+  text-align: left;
+  background-color: $primaryColor;
+  figure:nth-child(1) {
+    display: none; /*this pic for bigger screen*/
+  }
+  figure img {
+    width: 100%;
+  }
+  ul {
+    margin: 0.5rem 2%;
+  }
+  ul li {
+    list-style: none;
+    font-size: 0.8rem;
+    color: #404d0b;
+  }
+  ul li a:not(:first-child) {
+    text-decoration: none;
+    color: #404d0b;
+    border-bottom: dotted gray 2px;
+  }
+  ul li a {
+    text-decoration: none;
+  }
+  ul li i {
+    margin: 2%;
+    font-size: 1rem;
+    transition: 0.2s;
+    color: #404d0b;
+  }
+  ul li:first-child i {
+    animation: changeColor 2s infinite;
+  }
+  p {
+    font-size: 0.5rem;
+    margin-right: 2%;
+    text-align: right;
+    color: gray;
+  }
+}
+// ======================Gallery===================
+.thuVienHinh {
+  margin-top: 5rem;
+  .album-container {
+    margin: 2rem auto 0.8rem auto;
+  }
+  .photo-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .photo-wrapper li {
+    list-style: none;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+}
+
+.modalBox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 50;
+}
+.modalBox .closeBtn {
+  float: right;
+  color: white;
+  margin: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.modalBox-content {
+  width: 80%;
+  clear: both;
+  height: 90vh;
+  margin: 2rem auto;
+  overflow-y: auto;
+}
+.modalBox-content img {
+  width: 100%;
+  display: block;
+  border: solid white 2px;
+  border-radius: 15px;
 }
