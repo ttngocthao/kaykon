@@ -214,13 +214,11 @@ main {
   line-height: 1.5rem; }
 
 .gioiThieu .content {
-  padding: 0.5rem 1rem;
-  height: auto;
-  text-align: left; }
-.gioiThieu .content {
   padding: 0.7rem;
   border: 0.1rem solid white;
-  border-radius: 15px; }
+  border-radius: 15px;
+  height: auto;
+  text-align: left; }
 .gioiThieu .wrapper {
   background-size: cover;
   background-repeat: none;
@@ -228,11 +226,11 @@ main {
   border: 1px solid white;
   box-shadow: 3px 3px 3px gray; }
 .gioiThieu .forWhom .wrapper {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/dailyImgs/dailyImgs4.jpg"); }
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/dailyImgs/dailyImgs4.jpg"); }
 .gioiThieu .montessori .wrapper {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/slideshow/beautifulLanscape.jpg"); }
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/fieldTrip/fieldTrip12.jpg"); }
 .gioiThieu .curriculum .wrapper {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/slideshow/nature-wallpapers-8.jpg"); }
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/happyEaster/happyEaster8.jpg"); }
 .gioiThieu .wrapper div {
   width: 80%;
   margin: 1rem auto;

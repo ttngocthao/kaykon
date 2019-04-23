@@ -137,15 +137,11 @@ main {
 }
 .gioiThieu {
   .content {
-    padding: 0.5rem 1rem;
-    height: auto;
-    text-align: left;
-  }
-
-  .content {
     padding: 0.7rem;
     border: 0.1rem solid rgb(255, 255, 255);
     border-radius: 15px;
+    height: auto;
+    text-align: left;
   }
   .wrapper {
     background-size: cover;
@@ -156,24 +152,24 @@ main {
   }
   .forWhom .wrapper {
     background-image: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
       ),
       url("../images/dailyImgs/dailyImgs4.jpg");
   }
   .montessori .wrapper {
     background-image: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
       ),
-      url("../images/slideshow/beautifulLanscape.jpg");
+      url("../images/fieldTrip/fieldTrip12.jpg");
   }
   .curriculum .wrapper {
     background-image: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6)
       ),
-      url("../images/slideshow/nature-wallpapers-8.jpg");
+      url("../images/happyEaster/happyEaster8.jpg");
   }
   .wrapper div {
     width: 80%;
